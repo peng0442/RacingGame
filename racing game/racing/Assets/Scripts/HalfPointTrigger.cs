@@ -7,5 +7,10 @@ public class HalfPointTrigger : MonoBehaviour
     public GameObject LapCompleteTrig;
     public GameObject HalfLapTrig;
 
-    void On
+    void OnTriggerEnter()
+    {
+        LapCompleteTrig.SetActive(true);
+        HalfLapTrig.SetActive(false);
+
+    }
 }
